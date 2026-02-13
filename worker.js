@@ -6,7 +6,6 @@ export default {
       const payload = await request.json();  
       console.log('Payload recibido:', JSON.stringify(payload, null, 2));  
 
-  
       return new Response(JSON.stringify({ status: 'ok' }), {  
         status: 200,  
         headers: { 'Content-Type': 'application/json' },  
